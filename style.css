@@ -101,6 +101,7 @@ nav ul li:hover {
 
 #contact a {
   color: #F84848;
+  padding: 0 10px;
 }
 
 #contact:hover {
@@ -172,21 +173,95 @@ nav ul li:hover {
   flex: 1;
 }
 
+/* Exceptional section */
+
 #exceptional {
-  height: 530px;
+  min-height: 530px;
+  text-align: center;
+  color: #3E4142;
 }
 
-/**/
+#exceptional h1, #conceptToSolution h1 {
+  font-size: 4rem;
+  font-weight: lighter;
+  padding: 70px 30px 0px 30px;
+  margin: 0;
+}
 
 #exc-content {
   display: flex;
-  padding: 0 20px;
+  margin-top: 50px;
 }
 
 #exc-content article {
   flex: 1;
+  padding: 0 10px;
 }
 
 #exc-content article img {
   height: 100px;
+}
+
+#exc-content article h3 {
+  font-weight: lighter;
+  font-size: 2.3rem;
+  line-height: 3rem;
+}
+
+#exc-content article p {
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+}
+
+#exc-content article p a {
+  color: #F84848;
+  text-decoration: none;
+}
+
+#exc-content article p a:hover {
+  font-weight: bold;
+}
+
+#conceptToSolution {
+  text-align: center;
+  color: #3E4142;
+  background-color: #F6F6F6;
+  padding-bottom: 90px;
+}
+
+#conceptToSolution img {
+  margin-top: 20px;
+}
+
+#conceptToSolution #process {
+  height: 310px;
+  margin-bottom: 50px;
+}
+
+#conceptToSolution a {
+  color: white;
+  margin-bottom: 50px;
+  font-size: 1.7rem;
+  padding: 8px 60px;
+  background-color: #F84848;
+  border: 2px solid #f84848;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+#conceptToSolution a:hover {
+  background-color: #cb3737;
+  border-color: #cb3737;
+}
+
+#conceptToSolution p, #conceptToSolution h3 {
+  margin: 40px 0 10px 0;
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+  padding: 0 10%;
+}
+
+#conceptToSolution #process p {
+  margin-bottom: 50px;
 }
