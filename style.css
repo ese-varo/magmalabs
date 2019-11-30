@@ -80,7 +80,7 @@ nav ul li {
 }
 
 nav a:hover {
-  font-family: 'palanquinsemibold';
+  font-weight: bold;
 }
 
 #tools p::before {
@@ -90,7 +90,7 @@ nav a:hover {
 }
 
 nav ul li:hover {
-  border-top: 3px solid #F84848;
+  background: linear-gradient(to bottom, #F84848 5px, transparent 5px);
 }
 
 #logo {
@@ -99,8 +99,12 @@ nav ul li:hover {
   float: left;
 }
 
-#contact {
+#contact a {
   color: #F84848;
+}
+
+#contact:hover {
+  background: linear-gradient(to bottom, #F84848 100%, transparent 100%);
 }
 
 .dropdown {
