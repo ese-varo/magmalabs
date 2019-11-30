@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'palanquinbold';
+  src: url('fonts/palanquin-bold-webfont.woff2') format('woff2'),
+    url('fonts/palanquin-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'palanquinmedium';
+  src: url('fonts/palanquin-medium-webfont.woff2') format('woff2'),
+    url('fonts/palanquin-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'palanquinregular';
+  src: url('fonts/palanquin-regular-webfont.woff2') format('woff2'),
+    url('fonts/palanquin-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'palanquinsemibold';
+  src: url('fonts/palanquin-semibold-webfont.woff2') format('woff2'),
+    url('fonts/palanquin-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+  font: 1.2rem / 1.2 'palanquinregular', Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: background-color 0.4s ease-out;
+  width: 100%;
+}
+
+header div {
+  margin-left: 50px;
+}
+
+nav {
+  float: right;
+  margin-right: 50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav a:hover {
+  font-family: 'palanquinsemibold';
+}
+
+#tools p::before {
+  content: "•  ";
+  color: #F84848;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  border-top: 3px solid #F84848;
+}
+
+#logo {
+  height: 65px;
+  width: 234px;
+  float: left;
+}
+
+#contact {
+  color: #F84848;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 0;
+}
+
+.dropdown-content {
+  display: none;
+  margin-left: 0;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  line-height: 4rem;
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover { background-color: #ddd; }
+
+.dropdown:hover .dropdown-content { display: block; }
+
+#hero {
+  color: white;
+  position: relative;
+  background-color: #3A3030;
+  background-image: url("img/back4.png")
+}
+
+#hero h1 {
+  color: #F84848;
+  font-size: 4rem;
+}
+
+#hero-content {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#hero-content p {
+  font-size: 2rem;
+}
+
+#tools {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#tools p {
+  text-align: center;
+  flex: 1;
+}
+
+#exceptional {
+  height: 530px;
+}
+
+/**/
+
+#exc-content {
+  display: flex;
+  padding: 0 20px;
+}
+
+#exc-content article {
+  flex: 1;
+}
+
+#exc-content article img {
+  height: 100px;
+}
